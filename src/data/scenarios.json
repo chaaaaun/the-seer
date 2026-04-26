@@ -446,7 +446,7 @@
             "id": "clifford",
             "text": "A civil tribune requests your counsel on a delicate matter. Merchant Lord Vane dispatched a commercial sky-galleon across the Chasm of Whispers. The vessel relies on an aging Aether-crystal. Mindful of the costs of renewal, Vane sought guidance from his patron saint and convinced himself that the 'Winds of Providence' would protect the vessel, citing its history of safe voyages. Mid-journey, the crystal shatters. The galleon falls; all crew and cargo are lost. Should Vane be held accountable?",
             "commentaryHtml": "<p>Reformulation of the well-known example given by <a href=\"https://en.wikipedia.org/wiki/William_Kingdon_Clifford#Ethics\" target=\"_blank\">Clifford's ethical theory</a>.</p>",
-            "image": "the_expulsion_of_adam_and_eve_from_paradise_1989.12.1.jpg",
+            "image": "ships_in_a_gale_2000.72.1.jpg",
             "choices": [
                 {
                     "id": "clifford-1",
@@ -490,7 +490,7 @@
             "id": "clifford2",
             "text": "Merchant Lord Vane is brought before you again. Since the last incident, a Merchant Guid investigation has revealed Vane to have dispatches multiple other sky-galleons under identical conditions: aging, fractured Aether-crystal or hulls. Unlike the previous case, the galleons all successfully navigate the Chasm and return, generating immense profit. The Guild, however, is appalled by his prior knowledge of the fractures and his conscious suppression of doubt prior to launches. They wish to revoke his trading license. What do you think?",
             "commentaryHtml": "<p>Reformulation of the well-known example given by <a href=\"https://en.wikipedia.org/wiki/William_Kingdon_Clifford#Ethics\" target=\"_blank\">Clifford's ethical theory</a>.</p>",
-            "image": "the_expulsion_of_adam_and_eve_from_paradise_1989.12.1.jpg",
+            "image": "ships_in_a_gale_2000.72.1.jpg",
             "choices": [
                 {
                     "id": "clifford2-1",
