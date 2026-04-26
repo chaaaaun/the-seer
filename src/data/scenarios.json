@@ -1,0 +1,446 @@
+{
+    "maxScenarios": 10,
+    "scenarios": [
+        {
+            "id": "pascals-wager",
+            "text": "A worried merchant asks for advice: the God of Coin, Mamnon, is said to be leaving for a higher plane of existence. His priests proclaim: worship him now and be rewarded with infinite gold in the afterlife; ignore him and face infinite debt in the void. No one has returned from death to confirm this. Should he tithe?",
+            "commentaryHtml": "<p>A modified <a href=\"https://en.wikipedia.org/wiki/Pascal%27s_wager\" target=\"_blank\">Pascal's Wager</a>.</p>",
+            "image": "scales_1943.8.13437.jpg",
+            "choices": [
+                {
+                    "id": "pascals-wager-1",
+                    "text": "Tithe. There's too much at stake to be stingy with belief.",
+                    "impact": {
+                        "epistemic": -2,
+                        "doxastic": -1,
+                        "ethical": -1
+                    }
+                },
+                {
+                    "id": "pascals-wager-2",
+                    "text": "Mamnon is one god among thousands. Why not Zythar the Flame? Surely you could get a better deal somewhere else.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": 1,
+                        "ethical": -2
+                    }
+                },
+                {
+                    "id": "pascals-wager-3",
+                    "text": "Is Mamnon really going to honor devotion based on fear and greed? You're free to believe, but not because of his priests' empty promises.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 1,
+                        "ethical": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "gettier-problem",
+            "text": "A great general appears before you, seemingly shaken: The Oracle of Vel Soran has not been wrong in living memory. The general had consulted her about a trade route and she declared it safe. But he later discovered she was reasoning from a map fifteen years out of date, her conclusion was correct only by coincidence. A bandit army happened to set up camp the very day after his army passed.",
+            "commentaryHtml": "<p><a href=\"https://en.wikipedia.org/wiki/Gettier_problem\" target=\"_blank\">Gettier Problem</a></p>",
+            "image": "general_bonaparte_on_horseback_1980.44.3.jpg",
+            "choices": [
+                {
+                    "id": "gettier-problem-1",
+                    "text": "Her track record is reliable enough. Perhaps the general has misinterpreted her methods.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": 1,
+                        "ethical": -1
+                    }
+                },
+                {
+                    "id": "gettier-problem-2",
+                    "text": "This revelation fundamentally changes everything. Don't trust the Oracle's predictions until her methods are verified.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": 2,
+                        "ethical": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "leap-of-faith",
+            "text": "The chariot rider Thalon, of Colliseum fame, comes to you, distraught. The Prophet Solvara has told him to sacrifice his beloved horse, a creature of no wrongdoing, at the Temple of the Unnamed. She offers no reason, but at the same time, she has not been wrong in forty years. The act would hurt no one but the horse. She says the Unnamed requires it as proof of faith, precisely because reason cannot justify it.",
+            "commentaryHtml": "<p>A <a href=\"https://en.wikipedia.org/wiki/Fideism\" target=\"_blank\">Fideist</a> position, that some truths are not revealed without sufficient belief.</p>",
+            "image": "horses_1985.64.34.jpg",
+            "choices": [
+                {
+                    "id": "leap-of-faith-1",
+                    "text": "Yes. The highest commitment transcends calculation. Forty years of accuracy is its own testimony.",
+                    "impact": {
+                        "epistemic": -2,
+                        "doxastic": -1,
+                        "ethical": 0
+                    },
+                    "unlockScenarioIds": [
+                        "leap-of-faith3"
+                    ]
+                },
+                {
+                    "id": "leap-of-faith-2",
+                    "text": "No. That she provides no reason is a red flag. Don't let her off the hook just because of her past successes.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": 2,
+                        "ethical": 0
+                    },
+                    "unlockScenarioIds": [
+                        "leap-of-faith2"
+                    ]
+                },
+                {
+                    "id": "leap-of-faith-3",
+                    "text": "If Solvara can show what good will come of it, he can comply.",
+                    "impact": {
+                        "epistemic": 2,
+                        "doxastic": 1,
+                        "ethical": -1
+                    },
+                    "unlockScenarioIds": [
+                        "leap-of-faith2"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "leap-of-faith2",
+            "text": "The chariot rider Thalon is back. The Prophet Solvara declares that if the horse is not sacrificed, Thalon and his bloodline will lose divine favour for generations. His family has begun to pressure him.",
+            "commentaryHtml": "<p>A <a href=\"https://en.wikipedia.org/wiki/Fideism\" target=\"_blank\">Fideist</a> position.</p>",
+            "image": "horses_1985.64.34.jpg",
+            "choices": [
+                {
+                    "id": "leap-of-faith2-1",
+                    "text": "Kill the horse. While the effects cannot be verified, the risk of the faith of his loved ones outweighs life of one animal.",
+                    "impact": {
+                        "epistemic": -2,
+                        "doxastic": 0,
+                        "ethical": -1
+                    },
+                    "unlockScenarioIds": [
+                        "leap-of-faith3"
+                    ]
+                },
+                {
+                    "id": "leap-of-faith2-1",
+                    "text": "Refuse. To kill an innocent creature based on a 'spiritual' threat is a violation of reason.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": 2,
+                        "ethical": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "leap-of-faith3",
+            "text": "The chariot rider Thalon is back, truly angry now. The horse has been killed, but the Prophet now claims the 'imbalance' requires a deeper sacrifice, else it would have been for naught. Thalon must publicly declare that the horse was a vessel for a demon and that his love for it was a delusion. He must burn his trophies and strike his name from the Coliseum records to 'purify' the city's history.",
+            "commentaryHtml": "<p>How many lines can be crossed before belief is no longer enough? Why is that line the limit</p>",
+            "image": "horses_1985.64.34.jpg",
+            "choices": [
+                {
+                    "id": "leap-of-faith3-1",
+                    "text": "Agree to the public confession. Destroy his records and lie about the horse's nature.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": -2,
+                        "ethical": -1
+                    }
+                },
+                {
+                    "id": "leap-of-faith3-2",
+                    "text": "Refuse. One cannot 'believe' a known falsehood into being truth.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": 2,
+                        "ethical": 2
+                    }
+                }
+            ]
+        },
+        {
+            "id": "stores",
+            "text": "Members of a settlement ask you to settle an urgent dispute. The acolytes of the Church, as well as some townsfolk say they have experienced a 'Searing Vision' transmitted by a blinding, impossible light. They claim the Voice of the Eternal Law has commanded that all remaining food stores be burned to 'purify the soil for the coming harvest.'\nVaelen, the settlement's lead archivist, presents empirical grain charts and historical weather patterns. He argues that burning the stores is a mathematical death sentence for the colony based on three centuries of agricultural data and the physical reality of the current winter.\nThey demand your judgment.",
+            "commentaryHtml": "<p>Debates on <a href=\"https://en.wikipedia.org/wiki/Revelation\" target=\"_blank\">divine revelation</a>.</p>",
+            "image": "the_vision_of_god_1941.1.242.jpg",
+            "choices": [
+                {
+                    "id": "stores-1",
+                    "text": "Burn the stores. Elara's vision is a sign of divine will. The settlement must have faith in the Eternal Law's provision.",
+                    "impact": {
+                        "epistemic": -2,
+                        "doxastic": -1,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "stores-2",
+                    "text": "Preserve the stores. The archivist is correct; we cannot discard centuries of proven data for a singular, unrepeatable sensation.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": 1,
+                        "ethical": -1
+                    }
+                },
+                {
+                    "id": "stores-3",
+                    "text": "We must investigate the source of the light before acting; both the vision and the data could be incomplete.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 2,
+                        "ethical": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "religious-text",
+            "text": "An isolationist mountain community has lived by the Light-Bringer's Codex for five centuries. The text dictates harvest cycles, judicial rulings, and the spiritual lineage of the ruling Council.\nA high-altitude landslide has revealed a hidden chamber containing the personal journals of the Codex author. The journals explicitly detail how the Codex was fabricated as a tool for population control during a period of civil unrest, debunking the myth of divine revelation.\nThe adventurers who discovered the chamber ask for your guidance.",
+            "commentaryHtml": "<p>Debates on religious texts and authenticity/purpose.</p>",
+            "image": "mountain_view_1975.23.41.jpg",
+            "choices": [
+                {
+                    "id": "religious-text-1",
+                    "text": "Destroy the new discovery immediately to maintain social cohesion and prevent a total collapse of the community's moral framework.",
+                    "impact": {
+                        "epistemic": -2,
+                        "doxastic": -1,
+                        "ethical": 1
+                    }
+                },
+                {
+                    "id": "religious-text-2",
+                    "text": "Absorb the discovery by claiming the journals are 'tests of faith' or allegorical trials.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": -1,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "religious-text-3",
+                    "text": "Place the journals in the public square. Invite scholars and citizens to examine the ink, parchment, and contents to determine their authenticity before making any policy changes.",
+                    "impact": {
+                        "epistemic": 2,
+                        "doxastic": 1,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "religious-text-4",
+                    "text": "Dissolve the Council and declare the Codex null and void. The truth must be upheld, regardless of the immediate social chaos.",
+                    "impact": {
+                        "epistemic": 2,
+                        "doxastic": 0,
+                        "ethical": 2
+                    }
+                }
+            ]
+        },
+        {
+            "id": "save-a-life",
+            "text": "A High Inquisitor of the Eternal Ember presents you their sick child. The High Inquisitor's child is dying of a magical necrosis. The Inquisitor claims to have received a vision promising a miraculous recovery if they maintain a continuous prayer vigil for three days, touching no medicines.\nThe local Alchemists' Guild, on the other hand, proposes a radical serum. They bring records, showing a 50% recovery rate, but the treatment requires the child to be submerged in Void-Water, an elemental substance the Inquisitor's faith deems an abomination that extinguishes the soul. What should he do?",
+            "commentaryHtml": "<p>Controversies around refusal of medical services for religious reasons.</p>",
+            "image": "doctor_1943.3.4892.jpg",
+            "choices": [
+                {
+                    "id": "save-a-life-1",
+                    "text": "Abandon the vigil and administer the Alchemist's serum.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 0,
+                        "ethical": 1
+                    }
+                },
+                {
+                    "id": "save-a-life-2",
+                    "text": "Reject the Alchemists. Commit fully to the vigil.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": -1,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "save-a-life-3",
+                    "text": "Demand the Inquisitor provide a Sign of Favor within six hours. If no sign appears, proceed with the serum. If it does, continue prayer.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 1,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "religious-text-4",
+                    "text": "Refuse both treatments. Argue that if the Eternal Flame is all-powerful, no vigil is needed, and if the Alchemists are merely guessing, no treatment is justified.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": 2,
+                        "ethical": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "avatar",
+            "text": "The Order of the Radiant Aegis holds the Light-Bringer's Codex as the exclusive map to the afterlife. In their travels, a member of the Order stumbles upon a secluded valley inhabited by the Aureli. The Aureli are pacifists who maintain spiritual equilibrium through the ritualized cultivation of bioluminescent flora, claiming their roots anchor the souls of the deceased to the earth, rather than ascending to a solar deity. They offer the traveler shelter but refuse to abandon their botanical rites. What should the Order do?",
+            "commentaryHtml": "<p>Religious disagreement and conversion.</p>",
+            "image": "flowering_plant_with_buds_1987.57.5.jpg",
+            "choices": [
+                {
+                    "id": "avatar-1",
+                    "text": "That the Aureli exist is reason enough to return to the Order and reexamine the Codex's teachings.",
+                    "impact": {
+                        "epistemic": 2,
+                        "doxastic": 2,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "avatar-2",
+                    "text": "Spend a week documenting the effects of the Aureli rituals to see if they yield measurable spiritual or physical protection before deciding to intervene.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 2,
+                        "ethical": 1
+                    }
+                },
+                {
+                    "id": "avatar-3",
+                    "text": "Adopt their customs externally to keep the peace, viewing their 'error' as a harmless cultural quirk that ensures stability.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 1,
+                        "ethical": 2
+                    }
+                },
+                {
+                    "id": "avatar-4",
+                    "text": "Confront the Aureli elders with the logical contradictions of their faith. If they cannot provide proof that the roots house souls, proceed to dismantle the grove as an act of mandatory liberation.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": -2,
+                        "ethical": 2
+                    }
+                }
+            ]
+        },
+        {
+            "id": "the-spore",
+            "text": "An explorer has made an important discovery his wishes to discuss with you. Some time ago, he chanced upon a village thriving around a Luminous Spore, a fungal growth they believe is the physical manifestation of a protective deity. This belief maintains social cohesion and provides the psychological resilience necessary to survive the harsh, predatory environment of the surrounding Barrens. He has discovered empirical evidence that the Spore is a mundane, bio-luminescent parasite that will eventually consume the village's water supply, though not for several decades. Should he tell the village?",
+            "commentaryHtml": "<p>Revelation of falsehoods about religious belief.</p>",
+            "image": "water_mill_1943.3.8165.jpg",
+            "choices": [
+                {
+                    "id": "the-spore-1",
+                    "text": "Remain silent. Allow the village to continue its worship to preserve their immediate survival and well-being.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": -1,
+                        "ethical": -1
+                    }
+                },
+                {
+                    "id": "the-spore-2",
+                    "text": "Publicly expose the Spore as a parasite. Destroy the 'deity' to force the village to confront reality, regardless of the emotional or social cost.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 1,
+                        "ethical": 2
+                    }
+                },
+                {
+                    "id": "avatar-3",
+                    "text": "Fabricate a new 'prophecy' that explains the Spore's eventual fading in a way that aligns with their faith, guiding them to move voluntarily before the water is poisoned.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": 0,
+                        "ethical": -2
+                    }
+                }
+            ]
+        },
+        {
+            "id": "jesus-grain",
+            "text": "A young acolyte tells you of a terrible discovery. In the Kingdom of Oakhaven, the 'Miracle of the Seven Sons' is a historical account stating that the first High Priest, Solon, fed an entire province during a famine by multiplying a single bushel of grain. This act is the foundation for the belief in divine providence and the inherent holiness of the priesthood.\n The acolyte chanced upon an administrative ledger in a forgotten vault. The ledger, verified by imperial seals and carbon dating, proves that the miracle was actually a secret grain shipment from a rival empire, used by Solon to consolidate political power. The core tenet of divine intervention is historically fraudulent. What is the acolyte to do?",
+            "commentaryHtml": "<p>What if the historical basis for religions were proven false?</p>",
+            "image": "still_life_with_figs_and_bread_2000.6.1.jpg",
+            "choices": [
+                {
+                    "id": "jesus-grain-1",
+                    "text": "Destroy the ledger and maintain devotion. The social stability and moral framework provided by the faith outweigh the literal truth of its origin.",
+                    "impact": {
+                        "epistemic": -2,
+                        "doxastic": 0,
+                        "ethical": -2
+                    }
+                },
+                {
+                    "id": "jesus-grain-2",
+                    "text": "Publish the findings openly to the citizenry. A life built on a lie is inherently valueless and that the truth is an absolute requirement.",
+                    "impact": {
+                        "epistemic": 2,
+                        "doxastic": 0,
+                        "ethical": 2
+                    }
+                },
+                {
+                    "id": "jesus-grain-3",
+                    "text": "Keep the ledger and leave the Church. Use the knowledge as a personal lens to doubt all future 'miracles'.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": 2,
+                        "ethical": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "exile",
+            "text": "The King of Valerius seeks an audience. The Grand Oracle has presented a vision: the 'Unbound', those who are not Chosen by virtue of the kingdom's faith, will inadvertently trigger a great catastrophe in twenty years. Royal Archivists and Mages have tracked the Unbound for centuries; their data indicates no correlation between this demographic and civil instability. The King needs a resolution.",
+            "commentaryHtml": "<p>The in-group, out-group dynamic is particularly present in religion. See: <a href=\"https://en.wikipedia.org/wiki/Varna_(Hinduism)\" target=\"_blank\">Hindu caste systems</a>, <a href=\"https://en.wikipedia.org/wiki/Chosen_people\" target=\"_blank\">God's chosen</a>.</p>",
+            "image": "the_expulsion_of_adam_and_eve_from_paradise_1989.12.1.jpg",
+            "choices": [
+                {
+                    "id": "exile-1",
+                    "text": "Exile the Unbound immediately.",
+                    "impact": {
+                        "epistemic": -2,
+                        "doxastic": -2,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "exile-2",
+                    "text": "Refuse exile. Fund a decade-long study to monitor the Unbound for 'aetheric shifts' while maintaining their civil rights.",
+                    "impact": {
+                        "epistemic": 1,
+                        "doxastic": 2,
+                        "ethical": 0
+                    }
+                },
+                {
+                    "id": "exile-3",
+                    "text": "Do not exile, but impose mandatory state 'guidance' and monitoring on the Unbound to 'steer' them away from the prophecy's outcome.",
+                    "impact": {
+                        "epistemic": -1,
+                        "doxastic": 0,
+                        "ethical": -2
+                    }
+                },
+                {
+                    "id": "exile-4",
+                    "text": "Demand the Oracle submit to a Mind-Link with the Royal Archivists to verify the sensory raw-data of the vision, risking the Seer's sanity to find objective proof.",
+                    "impact": {
+                        "epistemic": 0,
+                        "doxastic": 2,
+                        "ethical": 2
+                    }
+                }
+            ]
+        }
+    ]
+}
