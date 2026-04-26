@@ -21,24 +21,64 @@ function shuffleChoices(choices: Choice[]): Choice[] {
 
 export default function ScenarioView({ scenario, onChoiceSelect }: ScenarioViewProps) {
     const [isCommentaryOpen, setIsCommentaryOpen] = useState(false)
+    const [isImageReady, setIsImageReady] = useState(false)
     const shuffledChoices = useMemo(() => shuffleChoices(scenario.choices), [scenario.id])
 
     useEffect(() => {
         setIsCommentaryOpen(false)
     }, [scenario.id])
 
+    useEffect(() => {
+        let isCancelled = false
+        const image = new Image()
+
+        setIsImageReady(false)
+
+        image.onload = () => {
+            if (!isCancelled) {
+                setIsImageReady(true)
+            }
+        }
+
+        image.onerror = () => {
+            if (!isCancelled) {
+                // Avoid a stuck loading state if an asset fails to load.
+                setIsImageReady(true)
+            }
+        }
+
+        image.src = `/${scenario.image}`
+
+        return () => {
+            isCancelled = true
+        }
+    }, [scenario.id, scenario.image])
+
     return (
         <section className="space-y-4 p-4" aria-live="polite">
             <div className="flex flex-col gap-2 p-2">
                 <div className="shadow-inner relative h-44 overflow-hidden rounded-full w-52 h-52 border-8 border-double border-slate-300 mx-auto">
-                    <img
-                        src={`/${scenario.image}`}
-                        alt={`Vision of ${scenario.id}`}
-                        className="h-full w-full object-cover"
-                    />
+                    {!isImageReady && (
+                        <div className="absolute inset-0 grid place-items-center bg-slate-100">
+                            <div className="relative h-20 w-20">
+                                <span className="absolute inset-0 rounded-full border border-slate-400/70 animate-ping" />
+                                <span className="absolute inset-2 rounded-full border border-slate-400/60 animate-ping [animation-delay:150ms]" />
+                                <span className="absolute inset-4 rounded-full border border-slate-400/50 animate-ping [animation-delay:300ms]" />
+                            </div>
+                        </div>
+                    )}
+
+                    {isImageReady && (
+                        <img
+                            src={`/${scenario.image}`}
+                            alt={`Vision of ${scenario.id}`}
+                            className="h-full w-full object-cover"
+                        />
+                    )}
                 </div>
                 <p className="text-xs text-right text-slate-500">
-                {scenario.image}</p>
+                    {scenario.image.split(".").slice(0, -1).join(".")}
+                </p>
                 <p className="text-xs text-right text-slate-500">
                     All credit goes to the National Gallery of Art at Washington DC for the lovely open-access images of their collection.
                 </p>
