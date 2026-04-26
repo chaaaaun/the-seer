@@ -455,7 +455,10 @@
                         "epistemic": 2,
                         "doxastic": 1,
                         "ethical": 0
-                    }
+                    },
+                    "unlockScenarioIds": [
+                        "clifford2"
+                    ]
                 },
                 {
                     "id": "clifford-2",
@@ -464,7 +467,10 @@
                         "epistemic": 0,
                         "doxastic": 0,
                         "ethical": -2
-                    }
+                    },
+                    "unlockScenarioIds": [
+                        "clifford2"
+                    ]
                 },
                 {
                     "id": "clifford-3",
@@ -473,7 +479,10 @@
                         "epistemic": 0,
                         "doxastic": -2,
                         "ethical": 0
-                    }
+                    },
+                    "unlockScenarioIds": [
+                        "clifford2"
+                    ]
                 } 
             ]
         },
